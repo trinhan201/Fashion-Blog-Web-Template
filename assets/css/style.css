@@ -1,0 +1,505 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common css */
+html {
+    font-family: "Oswald",Arial,sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.blur {
+    opacity: 0.6;
+}
+
+.dark-bg {
+    background-color: #000 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-size {
+    font-size: 15px !important;
+}
+
+.icon-size {
+    font-size: 24px !important;
+    letter-spacing: 3px;
+}
+
+.line-height {
+    line-height: 1.5;
+}
+
+.p-4-8 {
+    padding: 4px 8px!important;
+}
+
+.p-12-24 {
+    padding: 16px 24px!important;
+}
+
+.mv-10 {
+    margin: 10px 0;
+}
+
+.mv-15 {
+    margin: 15px 0;
+}
+
+.mt-4 {
+    margin-top: 4px !important;
+}
+
+.row {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+
+.card-row {
+    padding: 16px;
+}
+
+.col {
+    float: left;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-2-3 {
+    width: calc(100% / 3 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.col-full {
+    width: 100%;
+}
+
+/* Main css */
+#nav-bar {
+    height: 38.5px;
+    background-color: #000;
+    position: relative;
+    /* top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1; */
+}
+
+#nav-list {
+    font-size: 0px;
+    /* margin-top: 0.5px; */
+}
+
+#nav-list a {
+    color: #fff;
+    padding: 10.75px 16px;
+    line-height: 38.5px;
+    font-size: 15px;
+}
+
+#nav-search {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 10.25px 16px;
+}
+
+#nav-list a:hover,
+#nav-search:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* #header {
+    
+} */
+
+#header .head-bg {
+    width: 100%;
+    background-color: #fff;
+    /* margin-top: 38.5px; */
+    padding: 48px 16px;
+    text-align: center;
+}
+
+#header .head-bg .heading-bg-text {
+    margin: 12px 0;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#header .head-bg .heading-bg-sub-text {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#header .head-bg .heading-bg-sub-text span {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 8px;
+}
+
+#header .head-img {
+    padding-top: 70%;
+    background: url("../img/header-img/jane.jpg") no-repeat top center / cover;
+    color: #fff;
+    position: relative;
+}
+
+#header .head-img .head-img-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+}
+
+#header .head-img .head-img-content .img-text {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 3px;
+}
+
+#header .head-img .head-img-content .img-sub-text {
+    font-size: 64px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+#header .head-img .head-img-content .head-subscribe {
+    padding: 14px 24px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    opacity: 0.6;
+    border: none;
+    text-transform: uppercase;
+    font-family: Verdana,sans-serif;
+    letter-spacing: -2px;
+}
+
+#header .head-img .head-img-content .head-subscribe:hover {
+    opacity: 1;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#content {
+    background-color: #f1f1f1;
+}
+
+#content .card-content {
+    margin: 16px;
+    padding: 12px 24px;
+    background-color: #fff;
+}
+
+#content .card-content .card-title {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#content .card-content .card-sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#content .card-content .card-img {
+    padding: 16px 0;
+}
+
+#content .card-content .card-desc {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#content .card-content .card-btn {
+    margin: 15px 0;
+}
+
+#content .card-content .card-btn .btn-like {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 15px 0;
+}
+
+#content .card-content .card-btn .btn-reply {
+    padding: 8px 16px;
+    background-color: #000;
+    margin: 15px 0;
+    color: #fff;
+    float: right;
+    border: 1px solid black;
+}
+
+#content .card-content .card-btn .btn-reply span {
+    background-color: #fff;
+    color: #000;
+    padding: 4px 8px;
+}
+
+#content .card-content .card-btn .btn-reply:hover,
+#content .card-content .card-btn .btn-like:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#content .card-content .card-reply-field {
+    margin-top: 36px;
+    border-top: 1px solid #ccc;
+    display: none;
+}
+
+/* #content .card-content .card-reply-field.open-reply {
+    display: block;
+} */
+
+#content .card-content .card-reply-field .reply-list-item {
+    margin: 20px 0;
+}
+
+.card-reply-field .reply-list-item .reply-ava {
+    width: 83px;
+    margin-right: 48px;
+}
+
+.card-reply-field .reply-list-item .reply-list-item-content .reply-title {
+    font-size: 20px;
+} 
+
+#content .card-interview {
+    margin: 16px;
+    background-color: #000;
+}
+
+#content .card-interview .card-interview-content {
+    padding: 0.01em 16px;
+}
+
+#content .card-interview .card-interview-content .card-interview-title {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#content .card-interview .card-interview-content .card-interview-desc {
+    margin: 15px 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+#content .post-card {
+    margin: 16px;
+}
+
+#content .post-card  .post-heading {
+    background-color: #000;
+    padding: 8px 16px;
+}
+
+#content .post-card  .post-heading .post-heading-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0;
+
+}
+
+#content .post-card .post-list .post-list-item {
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#content .post-card .post-list .post-list-item:hover {
+    background-color: #ccc;
+}
+
+#content .post-card .post-list .post-list-item .post-ava {
+    width: 50px;
+    margin-right: 16px;
+}
+
+#content .post-card .post-list .post-list-item .post-title {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#content .post-card .post-list .post-list-item .post-desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .post-card .post-card-content {
+    background-color: #fff;
+}
+
+#content .post-card .post-card-content .ads-field {
+    background-color: #f1f1f1;
+    /* min-height: 200px; */
+}
+
+#content .post-card .post-card-content .ads-field p {
+    padding: 98px 0;
+    text-align: center;
+}
+
+#content .post-card .post-card-content .tag-wrapper p span {
+    background-color: #f1f1f1;
+    padding: 0 8px;
+    line-height: 1.5;
+    font-size: 12px;
+    margin-right: 1px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+#content .post-card .post-card-content .inspiration-img {
+    margin: 12px 8px;
+}
+
+#content .post-card .post-card-content .brand-list i:hover {
+    opacity: 0.6;
+}
+
+#content .post-card .post-card-content .subscribe-form {
+    margin-top: 15px;
+}
+
+#content .post-card .post-card-content .subscribe-form input{
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+}
+
+#red-sub-btn,
+#modal-subscribe-btn {
+    padding: 10px 18px;
+    width: 100%;
+    margin-top: 15px;
+    border: 0;
+    background-color: #f44336;
+    color: #fff;
+}
+
+#red-sub-btn:hover,
+#modal-subscribe-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: flex-start;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .modal-container {
+    background-color: #ffffff;
+    width: 900px;
+    max-width: calc(100% - 128px);
+    min-height: 200px;
+    padding: 48px 64px;
+    position: absolute;
+    top: 100px;
+    animation: modalAppear ease 1.5s;
+}
+
+.modal-close{
+    font-size: 24px;
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    color: #000;
+    padding: 8px 16px;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: #cccccc;
+}
+
+.modal .modal-container .modal-header h1{
+    font-weight: 400;
+}
+
+.modal .modal-container .modal-body .modal-input {
+    border: 1px solid #cccccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#footer {
+    padding: 32px;
+    background-color: #616161;
+}
+
+#footer .link2top {
+    background-color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+#footer .footer-text {
+    margin: 15px 0;
+}
+
+@keyframes modalAppear{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
